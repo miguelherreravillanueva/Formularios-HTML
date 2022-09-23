@@ -15,41 +15,42 @@
       <p><b> <em> Formulario de admisión</em></b></p>
       <br>
       <label for="name">Nombre:</label><br>
-      <input type="text" id="name" name="name" autofocus><br>
+      <input type="text" class="name" name="name"><br>
       <br>
       <label for="name">Apellidos:</label><br>
-      <input type="text" id="name" name="name"><br>
+      <input type="text" class="last-name" name="last-name"><br>
       <br>
       <label for="quantity">Edad:</label><br>
-      <input type="number" id="quantity" name="quantity" min="50"><br>
+      <input type="number" class="quantity" name="quantity" min="50"><br>
       <br>
 
       <p>Escoge tu sexo:</p>
-      <input type="radio" id="sexo" name="sexo" value="Hombre">
+      <input type="radio" class="sexo" name="sexo" value="hombre">
       <label for="sexo">Hombre</label><br>
-      <input type="radio" id="sexo" name="sexo" value="Mujer">
+      <input type="radio" class="sexo" name="sexo" value="mujer">
       <label for="sexo">Mujer</label><br>
-      <input type="radio" id="sexo" name="sexo" value="No binario">
+      <input type="radio" class="sexo" name="sexo" value="no-binario">
       <label for="sexo">No binario</label><br>
 
       <p>Me siento viejuner:</p>
-      <input type="checkbox" id="select" name="select" value="Sí">
+      <input type="checkbox" class="select" name="select" value="si">
       <label for="select"> Sí</label><br>
-      <input type="checkbox" id="select" name="select" value="No">
+      <input type="checkbox" class="select" name="select" value="No">
       <label for="seclect"> No</label><br>
 
       <p>
         <label for="multilínea">Escribe algo sobre ti:</label>
       </p>
-      <textarea id="multilínea" name="multilínea" rows="4" cols="50" placeholder="Escribe unas líneas sobre ti aquí."></textarea>
+      <textarea class="multilinea" name="multilnea" rows="4" cols="50"
+        placeholder="Escribe unas líneas sobre ti aquí."></textarea>
       <br>
       <br>
       <label for="email">Correo eclectrónico:</label>
-      <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+      <input type="email" class="email" name="email" placeholder="ejemplo@gmail.com" required>
       <input type="submit" value="Submit">
       <br>
       <label for="phone">Telf.:</label>
-      <input type="tel" id="phone" name="phone" placeholder="123456789" pattern="[0-9]{9}" required><br><br>
+      <input type="tel" class="phone" name="phone" placeholder="123456789" pattern="[0-9]{9}" required><br><br>
     </form>
   </fieldset>
   <br>
@@ -60,26 +61,26 @@
       <p><b> <em>Formulario para el robo temporal de bicicletas</em></b></p>
       <br>
       <label for="date">Fecha:</label>
-      <input type="date" id="date" name="date">
+      <input type="date" class="date" name="date">
       <br>
-      <label for="appt">Hora:</label>
-      <input type="time" id="appt" name="appt">
+      <label for="hour">Hora:</label>
+      <input type="time" class="hour" name="hour">
       <br>
       <br>
 
       <label for="favcolor">Selecciona tu color de bicicleta favorito:</label>
-      <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+      <input type="color" class="favcolor" name="favcolor" value="#ff0000">
       <input type="submit" value="Submit">
       <br>
       <br>
       <label for="price">Precio (entre 20€ and 100€):</label>
-      <input type="range" id="price" name="price" min="20" max="100">
+      <input type="range" class="price" name="price" min="20" max="100">
       <input type="submit" value="Submit">
       <br> <br>
 
       <p>Tipo de bicicleta:</p>
       <label for="bike">Paseo</label>
-      <select id="bike" name="bike">
+      <select class="bike" name="bike">
         <option value="señorial">Señorial</option>
         <option value="anti-plebeyos">Anti-plebeyos</option>
         <option value="porEncimaDelHombro">PorEncimaDelHombroAudi</option>
@@ -87,7 +88,7 @@
 
       <br>
       <label for="bike">Montaña</label>
-      <select id="bike" name="bike">
+      <select class="bike" name="bike">
         <option value="gamusinos">Gamusinos</option>
         <option value="hueleflores premium">Hueleflores premium</option>
         <option value="fango lover">Fango lover</option>
@@ -95,7 +96,7 @@
 
       <br>
       <label for="bike">Carreras</label>
-      <select id="bike" name="bike">
+      <select class="bike" name="bike">
         <option value="metroymedio">Metroymedio</option>
         <option value="3 de la tarde. Fluorescente edition">3 de la tarde. Fluorescente edition</option>
         <option value="grupitors">Grupitors</option>
@@ -105,7 +106,7 @@
       <br>
       <label for="accesorios">Accesorios:</label>
       <br><br>
-      <select id="accesorios" name="accesorios" size="4" multiple>
+      <select class="accesorios" name="accesorios" size="4" multiple>
         <option value="ruedines">Ruedines</option>
         <option value="pegatinas">Pegatinas</option>
         <option value="cestita">Cestita</option>
@@ -116,8 +117,8 @@
       <input type="submit">
 
       <p>Marca:</p>
-      <input list="datalist" name="datalist" autofocus>
-      <datalist id="datalist">
+      <input list="datalist" name="datalist">
+      <datalist class="datalist">
         <option value="Specialized">
         <option value="Trek">
         <option value="Merida">
